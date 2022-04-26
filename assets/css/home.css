@@ -1,0 +1,80 @@
+#text1 {
+    color:  #FFC100;
+}
+
+#container1 {
+    background-color:  #EEFCFE;
+    border-radius: 2px;
+}
+
+.card {
+    border-radius: 13.5015px;
+}
+
+#card1 {
+    background-color:  #EAEEF6;
+}
+#card2 {
+    background-color:   #9460FC;
+    color: white;
+}
+#card3 {
+    background-color:   #00327A;
+    color: white;
+}
+#card4 {
+    background-color: #FAF0F1;
+}
+#card5 {
+    background-color: #3BC3EE;
+    color: white;
+}
+#card6 {
+    background-color:  #9460FC;
+    color: white;
+}
+#card7 {
+    background-color: #1372F1;
+    color: white;
+}
+#card8 {
+    background-color: #EAEEF6;
+}
+#card9{
+    box-shadow:  -8px -8px 16px rgba(0, 0, 0, 0.1), 8px 8px 16px rgba(0, 0, 0, 0.1);;
+}
+
+
+
+#container2 {
+    background-color:   rgba(217, 75, 98, 0.14);;
+    border-radius: 20px;
+}
+
+.card img {
+    border-radius: 27.0029px 27.0029px 0px 0px;
+}
+
+#col1 {
+    padding-right: 8rem;
+}
+
+#col2 {
+    padding-left: 8rem;
+    padding-top: 15rem;
+}
+
+
+
+@media (max-width:992px) {
+    #col2 {
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+        padding-left: 15rem;
+    }
+    
+    #col1 {
+        padding-left: 15rem;
+        padding-bottom: 5rem;
+    }
+}
