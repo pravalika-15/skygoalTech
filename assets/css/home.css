@@ -57,6 +57,7 @@
 
 #col1 {
     padding-right: 8rem;
+    padding-left: 7rem;
 }
 
 #col2 {
@@ -95,6 +96,32 @@
     border-radius: 6.5px;
 }
 
+#input1 {
+    width: 5rem;
+    height: 2.5rem;
+    padding-left: 0%;
+    border-radius: 40px;
+    border: none;
+    padding: 1.5rem;
+}
+
+#button1 {
+    background-color: #D94B62;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 40px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#input1 ::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
 @media (max-width:992px) {
     #col2 {
         padding-top: 0rem;
@@ -119,4 +146,30 @@
         padding-left: 7rem;
         padding-bottom: 5rem;
     }
+}
+
+
+
+div#testimonials{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#testimonials .card {
+    background-color: #EAEEF6;
+    border-bottom: 10px solid #D94B62;
+    border-radius: 6.5px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    margin-top: 40px;
+    background: #D94B62!important;
+}
+
+.owl-theme .owl-nav {
+    display: none;
 }
