@@ -160,17 +160,16 @@
         padding-left: 7rem;
         padding-bottom: 5rem;
     }
+
 }
 
 
 
 div#testimonials{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-    margin-right: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 #testimonials .card {
@@ -183,6 +182,8 @@ div#testimonials{
     border-radius: 30px;
     padding-left: 5rem;
 }
+
+
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     margin-top: 40px;

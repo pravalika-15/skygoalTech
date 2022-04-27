@@ -419,7 +419,7 @@
 
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 25rem;">
+                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
                     <div class="card-body">
                     <h5 class="card-title">Understanding the objective</h5>
                     <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
@@ -428,7 +428,7 @@
                 </div>
             
                 <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 25rem;">
+                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
                     <div class="card-body">
                     <h5 class="card-title">Understanding the objective</h5>
                     <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
@@ -437,7 +437,7 @@
                 </div>
             
                 <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 25rem;">
+                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
                     <div class="card-body">
                     <h5 class="card-title">Understanding the objective</h5>
                     <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
@@ -445,7 +445,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 25rem;">
+                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
                         <div class="card-body">
                         <h5 class="card-title">Understanding the objective</h5>
                         <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
@@ -453,7 +453,7 @@
                         </div>
                 </div>
                 <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 25rem;">
+                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
                         <div class="card-body">
                         <h5 class="card-title">Understanding the objective</h5>
                         <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
@@ -506,26 +506,26 @@
 
     <script>
         var owl = $('.owl-carousel');
-    owl.owlCarousel({
-     // animateOut: 'slideOutDown',
-     // animateIn: 'flipInX',
- 
-     loop: true,
-     nav: true,
-     margin: 10,
-     smartSpeed: 250,
-     responsive: {
-      0: {
-       items: 1
-      },
-      600: {
-       items: 2
-      },
-      960: {
-       items: 3
-      },
-     }
-    });
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+})
     
     </script>
     
