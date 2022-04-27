@@ -64,7 +64,36 @@
     padding-top: 15rem;
 }
 
+#container3 {
+    background-color:  #2A2742;
+    color: white;
+    border-radius: 40px;
+}
 
+#conatiner3 .button {
+    background-color:  #D94B62;
+    color: #D94B62;
+    
+}
+
+#conatiner3 input {
+    border-radius: 40px;
+}
+
+#conatiner4 .card {
+    border-radius: 30px;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    
+}
+
+#container4 .card {
+    background-color: #EAEEF6;
+    border-bottom: 10px solid #D94B62;
+    border-radius: 6.5px;
+}
 
 @media (max-width:992px) {
     #col2 {
@@ -75,6 +104,19 @@
     
     #col1 {
         padding-left: 15rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width:767px) {
+    #col2 {
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+        padding-left: 7rem;
+    }
+    
+    #col1 {
+        padding-left: 7rem;
         padding-bottom: 5rem;
     }
 }
