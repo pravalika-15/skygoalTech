@@ -46,8 +46,9 @@
 
 
 
-#card1 p {
-    padding-bottom: 10rem;
+#services p {
+    padding-bottom: 0rem;
+    font-size: smaller;
 }
 
 
