@@ -31,8 +31,24 @@
  
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
 
+     <!-- jquery  -->
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.js"
+     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     crossorigin="anonymous">
+     </script>
+     <script> 
+     $(function(){
+       $("#header").load("header.html"); 
+       $("#footer").load("footer.html"); 
+     });
+     </script>
+
 </head>
-<body>
+<body style="overflow-x: hidden;">
+    <!-- nav bar  -->
+    <div id="header"></div>
+
     <!-- <a href="/ml.html">ml page</a> -->
     <div class="row">
 
@@ -486,12 +502,14 @@
                     <input style="border-radius: 20px;" type="email" class="form-control py-3 fw-bold" placeholder="Enter your email" id="inputEmail4">
                 </div>
                 <div class="col-xs-2 col-md-2 emailButton" style="padding: 0px;">
-                        <Button style="border-radius: 20px; font-size: 16px button2;" class="btn btn-danger fw-bold py-3 w-100">Submit</Button>
+                        <Button style="border-radius: 20px; font-size: 16px button2; background-color: #D94B62; color: white;" class="btn btn fw-bold py-3 w-100">Submit</Button>
                 </div>
             </div>    
         </div>
     </div>
 </section>
+   <!-- footer  -->
+   <div id="footer"></div>
 
     <script src="jquery.min.js"></script>    
     <script src="owlcarousel/owl.carousel.min.js"></script>
