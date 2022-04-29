@@ -44,14 +44,12 @@
     box-shadow:  -8px -8px 16px rgba(0, 0, 0, 0.1), 8px 8px 16px rgba(0, 0, 0, 0.1);;
 }
 
-.images {
-    position: relative;
-    bottom: 0;
-}
+
 
 #card1 p {
     padding-bottom: 10rem;
 }
+
 
 
 
@@ -130,9 +128,6 @@
 
 
 
-#services p {
-    padding-bottom: 10rem;
-}
 
 
 
@@ -159,6 +154,13 @@
     #col1 {
         padding-left: 7rem;
         padding-bottom: 5rem;
+    }
+
+    #testimonials{
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 
 }
