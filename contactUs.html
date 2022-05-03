@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- https://script.google.com/macros/s/AKfycbzTFSnDzomVvcr_WvBstM4cOUVKq_VfR9iRSluucKz3C0z6baZD/exec -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,11 +27,16 @@
 
      <style>
          .join {
-    background-color: #2A2742;
-    color: white;
-    border-radius: 40px;
-    padding: 52px 0px 52px 0px;
-}
+           background-color: #2A2742;
+           color: white;
+           border-radius: 40px;
+           padding: 52px 0px 52px 0px;
+        }
+        @media screen and (min-width: 200px) and (max-width: 600px) {
+            .formPadding {
+                padding: 0px 20px 0px 20px;
+            }
+        }
      </style>
 </head>
 <body>
@@ -42,20 +48,20 @@
             <div class="container py-3">
                 <div class="row align-items-center justify-content-around">
                     <div class="col-md-5">
-                        <h1 class="fw-bold fs-2">
+                        <h1 class="fw-bold fs-1 mb-5">
                             <span class="text-warning">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit Phasellus ut pharetra.
                         </h1>
                     </div>
                     <div class="col-md-6">
-                        <div class="shadow pt-5 pb-5 px-5" style="border-radius: 20px; background-color: white;">
+                        <div class="shadow pt-5 pb-5 px-lg-5 formPadding" style="border-radius: 20px; background-color: white;">
                             <h2 class="fw-bold">Get in Touch</h2>
-                        <form action="">
-                            <input type="text" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 fw-bold" placeholder="Enter Name" aria-label="First name">
-                            <input type="text" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 fw-bold" placeholder="Last name" aria-label="Enter Contact No">
-                            <input type="text" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 fw-bold" placeholder="First name" aria-label="Enter Email">
-                            <textarea style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 fw-bold" id="exampleFormControlTextarea1" placeholder="Your message here" rows="3"></textarea>
+                        <form name="contactUs" method="post" action="">
+                            <input type="text" name="Name" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 fw-bold" placeholder="Enter Name" aria-label="Enter Name">
+                            <input type="text" name="Contact Number" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 fw-bold" placeholder="Enter Contact No" aria-label="Enter Contact No">
+                            <input type="text" name="Email" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 fw-bold" placeholder="Enter Email" aria-label="Enter Email">
+                            <textarea style="border-radius: 8px;" name="Message" class="form-control mt-4 py-3 px-4 fw-bold" id="exampleFormControlTextarea1" placeholder="Your message here" rows="3"></textarea>
                             <div class="mt-4">
-                                <button class="btn btn w-100 px-4 py-3 fw-bold" style="background-color: #2A2742; color: white; border-radius: 8px;">SUBMIT</button>
+                                <button type="submit" class="btn btn w-100 px-4 py-3 fw-bold" style="background-color: #2A2742; color: white; border-radius: 8px;">SUBMIT</button>
                             </div>
                         </form>
                         </div>
@@ -125,6 +131,20 @@
 </section>
    <!-- footer  -->
    <div id="footer"></div>
+
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTFSnDzomVvcr_WvBstM4cOUVKq_VfR9iRSluucKz3C0z6baZD/exec'
+    const form = document.forms['contactUs']
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => alert("We will contact you soon"))
+            .catch(error => console.error('Error!', error.message))
+    })
+   </script>
 
 </body>
 </html>
