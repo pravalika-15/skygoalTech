@@ -1,0 +1,18 @@
+.dropdown-hover:hover>.dropdown-menu {
+    display: inline-block;
+    }
+    
+    .dropdown-hover>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+    }
+    
+    @media screen and (min-width: 600px) {
+        .dropdownCenter {
+            right: auto;
+            left: 44%;
+            -webkit-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+    }
