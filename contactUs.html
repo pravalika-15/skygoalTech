@@ -141,7 +141,7 @@
                 method: 'POST',
                 body: new FormData(form)
             })
-            .then(response => alert("We will contact you soon"))
+            .then(response => location.reload())
             .catch(error => console.error('Error!', error.message))
     })
    </script>
