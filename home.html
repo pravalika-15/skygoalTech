@@ -542,6 +542,20 @@
     
     </script>
 
+<!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGI0VigNr266KTmWHW687CIBHNkaklEwMEA-nPPAnkjyKlv6P3s-SNCFOxN_txrCaJ/exec'
+    const form = document.forms['callBack']
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => location.reload())
+            .catch(error => console.error('Error!', error.message))
+    })
+   </script> -->
+
 
 
     
