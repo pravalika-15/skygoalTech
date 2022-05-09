@@ -16,3 +16,21 @@
             transform: translate(-50%, 0);
         }
     }
+
+
+
+
+
+    #img-col {
+        background-color: #2A2742;
+    }
+
+    #submit {
+        background-color: #2A2742;
+        color: white;
+    }
+
+    #submit:hover {
+        background-color: #2A2742;
+        color: white;
+    }
