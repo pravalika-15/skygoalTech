@@ -157,10 +157,10 @@
                           <h2 class="pb-3" >GET INSTANT CALL BACK</h2>
                           <form name="callBack" method="post" action="">
                             <input type="text" name="Name" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 " placeholder="Enter Name" aria-label="Enter Name" required>
-                            <input type="telNo" name="Contact Number" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4" placeholder="Enter Contact No" aria-label="Enter Contact No" minlength="10" maxlength="10" required>
+                            <input type="telNo" name="Contact Number" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4" placeholder="Enter Contact No" aria-label="Enter Contact No" minlength="10" maxlength="10" pattern="[789][0-9]{9}" required>
                             <input type="email" name="Email" style="border-radius: 8px;" class="form-control mt-4 py-3 px-4 " placeholder="Enter Email" aria-label="Enter Email" required>
                             <div class="mt-4 d-flex justify-content-between">
-                              <a  class=" text-dark" data-bs-dismiss="modal">No Thanks</a>
+                              <a class=" text-dark" data-bs-dismiss="modal">No Thanks</a>
                               <button type="submit" class="btn btn-dark"  data-bs-dismiss="modal">Submit Now</button>
                             </div>
                         </form>
