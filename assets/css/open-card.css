@@ -18,6 +18,10 @@
     height: 755.73px;
 }
 
+#con2 .card:hover {
+    transform: scale(1.1);
+}
+
 #three a {
     background-color:  #FF725E;
     color: white;
