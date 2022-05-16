@@ -21,6 +21,10 @@
     border-radius: 30px;
     font-size: small;
 }
+
+#price-img {
+    margin-right: -10rem;
+}
 #one {
     background-color:  #EB615B;
 }
