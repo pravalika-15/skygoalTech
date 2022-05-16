@@ -16,6 +16,15 @@
     
 }
 
+#con3 .card {
+    background-color: #3585D8;
+    border: none;
+}
+
+#image3 {
+    padding-left: 2.1rem;
+}
+
 #preview {
     background-color: #263238;
     border-radius: 30px;
