@@ -7,7 +7,20 @@
     background-color: #48C193;
     color: white;
 }
+#choose{
+    border-radius: 30px;
+}
 
+#text11{
+    color: gray;
+    
+}
+
+#preview {
+    background-color: #263238;
+    border-radius: 30px;
+    font-size: small;
+}
 #one {
     background-color:  #EB615B;
 }
