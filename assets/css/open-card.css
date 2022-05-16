@@ -77,9 +77,14 @@
     border-radius: 30px;
 }
 
-#con2 .card img {
+#con2 .card #image1 {
     padding-left: 2rem;
     padding-top: 2rem;
+}
+
+#con2 .card #image2 {
+    padding-left: 3rem;
+    padding-top: 3rem;
 }
 
 #con2 .card .card-body {
