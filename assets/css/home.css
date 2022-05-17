@@ -1,12 +1,19 @@
 #text1 {
     color:  #FFC100;
+    font-size: 48px;
 }
 
 #container1 {
     background-color:  #EEFCFE;
     border-radius: 2px;
 }
+#row1 {
+    background-color: #E5E5E5;;
+}
 
+#services .card:hover {
+    transform: scale(1.1);
+}
 .card {
     border-radius: 13.5015px;
 }
