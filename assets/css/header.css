@@ -35,4 +35,15 @@
         color: white;
     }
 
-    
+    #dropdown #p1 {
+        font-size: x-small;
+        color: gray;
+    }
+
+    #dropdown li:hover .texth{
+        border-bottom: 3px solid black;
+        
+    }
+
+   
+  

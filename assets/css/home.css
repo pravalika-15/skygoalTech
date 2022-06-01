@@ -1,12 +1,20 @@
 #text1 {
-    color:  #FFC100;
+    color:  #292742;
+    font-size: 48px;
+    font-weight: bolder;
 }
 
 #container1 {
     background-color:  #EEFCFE;
     border-radius: 2px;
 }
+#row1 {
+    background-color: white;;
+}
 
+#services .card:hover {
+    transform: scale(1.1);
+}
 .card {
     border-radius: 13.5015px;
 }
