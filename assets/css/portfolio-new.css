@@ -65,3 +65,14 @@
 #section4b #container4b .btn {
     background-color: #2A2742;;
 }
+
+.swiper {
+    width: 600px;
+    height: 250px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background:  rgba(105, 192, 253, 0.13); */
+}
