@@ -45,14 +45,13 @@
         
     }
 
-    .nav-link :hover {
-        border-bottom: 1px solid black;
-    }
 
-    .nav-item :hover {
+
+    #under-line :hover {
         /* border-bottom: 1px solid black; */
         text-decoration: underline;
     }
 
+    
    
   
