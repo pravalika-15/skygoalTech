@@ -1,8 +1,33 @@
+
+
+#img-card {
+    background-color: white;
+    box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.1), 8px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+#img-card:hover {
+    background-color: white;  
+}
+
+
+#img-card img {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#img-card img:hover{
+    background-color: white;
+    border-radius: 20px;
+}
+
 #card1 #card-body {
     background-color: #FF5F2D;
     border-radius: 20px;
     height: 400px;
 }
+
+
 @media screen and (min-width: 200px) {
     #card1 #card-body {
         height: 400px;
@@ -14,7 +39,7 @@
     }
 }
 
-#card1 :hover {
+#card1:hover {
     background-color: #FF5F2D;
     border-radius: 20px;
 }
@@ -35,7 +60,7 @@
     }
 }
 
-#card2 :hover {
+#card2:hover {
     background-color: #FF36A2;
     border-radius: 20px;
 }
@@ -46,7 +71,7 @@
     height: 400px;
 }
 
-#card3 :hover {
+#card3:hover {
     background-color: #3DB475;
     border-radius: 20px;
 }
@@ -75,7 +100,7 @@
     }
 }
 
-#card4 :hover {
+#card4:hover {
     background-color: #2A1E84;
     border-radius: 20px;
 }
@@ -91,14 +116,12 @@
     border-radius: 20px;
     height: 400px;
 }
-#card5 :hover {
+#card5:hover {
     background-color:  #07629D;
     border-radius: 20px;
 }
 
-#card5 :hover img {
-    background-color:  #07629D;
-}
+
 @media screen and (min-width: 200px) {
     #card5 #card-body {
         height: 400px;

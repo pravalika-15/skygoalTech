@@ -52,6 +52,68 @@
         $("#footer").load("footer.html"); 
       });
       </script>
+
+      <!-- swiper js -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+   <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper1 = new Swiper('.swiper', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+        500: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        }
+        },
+        
+        
+        
+        
+
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+});
+</script>
+
+
  
 </head>
 <body>
@@ -89,8 +151,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-5 py-4 d-flex align-items-center">
-                            <div>
-                                <img class="img-fluid" src="./assets/img/Chat bot-pana 1.png" class="img-fluid rounded-start" alt=".">
+                            <div class="card border-0 py-5" id="img-card">
+                                <img class="img-fluid" src="./assets/img/consulting -1.png" class="img-fluid rounded-start" alt=".">
                             </div>
                         </div>
                     </div>
@@ -105,8 +167,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-5 py-4 d-flex align-items-center">
-                             <div>
-                                <img class="img-fluid" src="./assets/img/image 3.png" class="img-fluid rounded-start" alt=".">
+                             <div class="card border-0 py-2" id="img-card">
+                                <img class="img-fluid" src="./assets/img/consulting -2.png" class="img-fluid rounded-start" alt=".">
                              </div>
                         </div>
                     </div>
@@ -121,8 +183,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-5 py-4 d-flex align-items-center">
-                            <div>
-                                <img class="img-fluid" src="./assets/img/image 11.png" class="img-fluid rounded-start" alt=".">
+                            <div class="card border-0 py-3" id="img-card">
+                                <img class="img-fluid" src="./assets/img/consulting-3.png" class="img-fluid rounded-start" alt=".">
                             </div>
                         </div>
                     </div>
@@ -138,8 +200,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-5 py-4  d-flex align-items-center">
-                            <div>
-                                <img class="img-fluid my-auto" src="./assets/img/image-2.png" class="img-fluid rounded-start" alt=".">
+                            <div class="card border-0" id="img-card">
+                                <img class="img-fluid my-auto" src="./assets/img/consulting -4.png" class="img-fluid rounded-start" alt=".">
                             </div>
                         </div>
                     </div>
@@ -154,8 +216,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-5 py-4 d-flex align-items-center">
-                            <div>
-                                <img class="img-fluid" src="./assets/img/image 9.png" class="img-fluid rounded-start" alt=".">
+                            <div class="card border-0" id="img-card">
+                                <img class="img-fluid" src="./assets/img/consulting -5.png" class="img-fluid rounded-start" alt=".">
                             </div>
                         </div>
                     </div>
@@ -166,14 +228,55 @@
     </section>
 
     <!-- some of our clients section  -->
-    <section class="container" style="margin-bottom: 140px;">
-        <h2 class="fw-bold py-5 text-center">Some of our Clients</h2>
-        <div class="row justify-content-evenly align-items-center">
-            <div class="col-md-5">
-                <img class="img-fluid" src="./assets/img/Frame 20.png" alt="">
+    <section class="py-3" >
+        <div class="container" id="container2">
+            <div class="row py-3" >
+                <div class="col text-center">
+                    <h3>Some of our clients</h3>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="./assets/img/Frame 20 1.png" alt="">
+            <div class="row pb-4">
+                <!-- Swiper -->
+                <div class="swiper">
+                    <div class="swiper-wrapper pb-4">
+                        
+                    <div class="swiper-slide"><img src="./assets/img/Frame 48 (1).png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Frame 49.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Frame 50.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Frame 51.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Frame 57.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Frame 56.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Frame 58.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Frame 59.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13841.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13842.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13839.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13836.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13835.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13840.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13844.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13846.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13849.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13850.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13833.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13834.png" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="./assets/img/Group 13853.png" class="img-fluid"></div>
+
+                </div>
+
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
             </div>
         </div>
     </section>
