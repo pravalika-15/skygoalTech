@@ -215,3 +215,18 @@ div#testimonials{
 #home-col5 {
     padding-top: 6rem;
 }
+
+@media screen and (min-width: 600px) {
+    .dotted-bg {
+        background: url('../img/dotted-line.png') no-repeat;
+        background-size: 100% 90%;
+    }
+    .card-bottom-mg {
+        padding-top: 320px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .card-bottom-mg {
+        padding-top: 50px;
+    }
+}
