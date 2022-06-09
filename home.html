@@ -112,6 +112,61 @@
 });
 </script>
 
+<!-- Initialize Swiper -->
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper2 = new Swiper('.swiper2', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+        100: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1350: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        }
+        },
+        
+        
+        
+        
+
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+});
+</script>
+
 </head>
 <body style="overflow-x: hidden;">
     <section style="overflow-x: hidden;">
@@ -717,62 +772,142 @@
     </section>
 
 
-    <div class="row pt-5">
-        <div class="col d-flex justify-content-center">
-            <h3><b>Client Testimonials</b></h3>
+
+
+    <div class="row pt-5" id="swiper2">
+        <div class="col px-5 pb-4 text-white d-flex justify-content-center">
+            <h4><b>Client Testimonials</b></h4>
         </div>
-    </div>
-    <!-- owl carousel -->
+        <!-- Swiper -->
+        <div class="swiper2 swiper px-5 pb-5 card-group">
+            <div class="swiper-wrapper pb-5 ">
 
-    <div id="testimonials" class="row justify-content-center px-5">
-        <div class="col-lg-12">
-
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" style="width: 12rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
                     <div class="card-body">
-                    <h5 class="card-title">Understanding the objective</h5>
-                    <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
+                      <p class="card-text px-3">I am satisfied, and the manner in which this team carried out their duties increased my sales, and there is currently no difficulty. It was completed exactly according to my instructions, and I am grateful. I will undoubtedly collaborate with them in the future.</p>
+                      <div class="card-footer border-0">
+                        <h6>Saran</h6>
+                        <p>From inspiring indians</p>
+                      </div>
                     </div>
-                    </div>
-                </div>
-            
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Understanding the objective</h5>
-                    <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                    </div>
-                    </div>
-                </div>
-            
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Understanding the objective</h5>
-                    <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Understanding the objective</h5>
-                        <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                        </div>
-                        </div>
-                </div>
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Understanding the objective</h5>
-                        <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                        </div>
-                        </div>
-                </div>
+                  </div>
             </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/futecttech-test.png" style="width: 8rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I was right to be sceptical about getting a logo and website designed for my startup. I choose Skygoal Tech because they were able to comprehend our needs. They were on schedule with the project delivery and had fantastic communication.</p>
+                      <div class="card-footer border-0">
+                        <h6>Dhanush</h6>
+                        <p>From Future Tech It Global</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/phlox energy-test.png" style="width: 8rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I'd seen folks praising their work before and thought I'd give it a shot to give a project . I'm quite happy with the outcome. I wasn't expecting much, maybe some grasp of my industry or some ideas, but they went above and beyond and designed a logo based on my tastes after considering all of the variables I gave at the outset. That was also incorporated into their artistic concept. The team is also incredibly kind and responsive.</p>
+                      <div class="card-footer border-0">
+                        <h6>sirazuddin</h6>
+                        <p>From Pholex Energy </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" style="width: 12rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I recommend this team of individuals, they are totally awesome and great to work with they just don't take your word for it, they truly observe what is happening and analyze, the moment they see things are not working they make changes</p>
+                      <div class="card-footer border-0">
+                        <h6>------</h6>
+                        <p>From Newishkart</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/arrowMonk-test.png" style="width: 12rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I have to say I'm impressed. I have a friend who is a Marketing Agency owner and he recommended you guys. I must say, this has been a great experience so far!</p>
+                      <div class="card-footer border-0">
+                        <h6>-----</h6>
+                        <p>From Arrowmonk</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card h-80" >
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/evergreen-test.png" style="width: 5rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I had contacted a few web developers to make my website, they took my money and did nothing. I then came across this young team, they designed the site on time and within budget.I was happy with my service and i will suggest to take a service from this team.</p>
+                      <div class="card-footer border-0">
+                        <h6>Harshit</h6>
+                        <p>From Evergreeninfra</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card h-80" >
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/leteducate-logo-test.png" style="width: 15rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I have dealt with few web designer but skygoaltech has the best team to provide service and they are very helpful i love this team because they are not only developers but they can suggest you what is the right thing to do for your business.</p>
+                      <div class="card-footer border-0">
+                        <h6>Teja </h6>
+                        <p>From Leteducate</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+
+        </div>
+
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
         </div>
     </div>
+    
+        
+    </div>
+
+
+    
+        
+</div>
 
 
     <section>
