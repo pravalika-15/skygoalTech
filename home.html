@@ -112,6 +112,60 @@
 });
 </script>
 
+<!-- Initialize Swiper -->
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper2 = new Swiper('.swiper2', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+        500: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        }
+        },
+        
+        
+        
+        
+
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+});
+</script>
+
 </head>
 <body style="overflow-x: hidden;">
     <section style="overflow-x: hidden;">
@@ -717,62 +771,128 @@
     </section>
 
 
-    <div class="row pt-5">
-        <div class="col d-flex justify-content-center">
+
+    
+
+
+
+    <div class="row pt-5" id="swiper2">
+        <!-- <div class="col d-flex justify-content-center">
             <h3><b>Client Testimonials</b></h3>
-        </div>
-    </div>
-    <!-- owl carousel -->
+        </div> -->
+        <!-- Swiper -->
+        <div class="swiper2 swiper px-5 pb-5">
+            <div class="swiper-wrapper pb-5">
+                
+            <div class="swiper-slide my-auto">
 
-    <div id="testimonials" class="row justify-content-center px-5">
-        <div class="col-lg-12">
+                <div class="col my-auto">
+                    <div class="card h-100 text-white border-0 my-auto" style="width: 18rem; background-color: #418DDC; color: white;" id="card1">
+                        <div class="card-body">
+                          <h5 class="card-title">Client Testimonials</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada vel etiam donec pharetra sem eu enim. Pellentesque bibendum turpis enim, quis. Faucibus vitae tempor egestas suspendisse porta facilisis ornare.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Understanding the objective</h5>
-                    <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                    </div>
-                    </div>
-                </div>
-            
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Understanding the objective</h5>
-                    <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                    </div>
-                    </div>
-                </div>
-            
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Understanding the objective</h5>
-                    <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Understanding the objective</h5>
-                        <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                        </div>
-                        </div>
-                </div>
-                <div class="item">
-                    <div class="card pb-5 pt-4 px-3" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Understanding the objective</h5>
-                        <p class="card-text">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
-                        </div>
-                        </div>
-                </div>
             </div>
+
+            <div class="swiper-slide">
+                <div class="card h-100" style="width: 20rem;">
+                    <div class="px-5 py-3" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
+                      <div class="card-footer border-0">
+                        <h6>Prabhakar P.S.V</h6>
+                        <p>From inspiring indians</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-100" style="width: 20rem;">
+                    <div class="px-5 py-3" id="image">
+                        <img src="./assets/img/Affinity Logo-test.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
+                      <div class="card-footer border-0">
+                        <h6>Prabhakar P.S.V</h6>
+                        <p>From inspiring indians</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-100" style="width: 20rem;">
+                    <div class="px-5 py-3" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
+                      <div class="card-footer border-0">
+                        <h6>Prabhakar P.S.V</h6>
+                        <p>From inspiring indians</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-100" style="width: 20rem;">
+                    <div class="px-5 py-3" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
+                      <div class="card-footer border-0">
+                        <h6>Prabhakar P.S.V</h6>
+                        <p>From inspiring indians</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-100" style="width: 20rem;">
+                    <div class="px-5 py-3" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">In order to develop fully functional project, we first understand the objectives/requirements of our customers. This is the most important concern we make, before we begin planning and working on the entire development process.</p>
+                      <div class="card-footer border-0">
+                        <h6>Prabhakar P.S.V</h6>
+                        <p>From inspiring indians</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+
+        </div>
+
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
         </div>
     </div>
+    
+        
+    </div>
+
+
+    
+        
+</div>
 
 
     <section>
