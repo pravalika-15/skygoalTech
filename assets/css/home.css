@@ -257,3 +257,7 @@ div#testimonials{
 #swiper2 .card #image {
     border-bottom: 1.5rem solid #F4F4F4;
 }
+
+#swiper2 .card:hover {
+    transform: scale(1.05);
+}
