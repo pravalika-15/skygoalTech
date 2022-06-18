@@ -30,6 +30,8 @@
     display: block;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
+    opacity: 0.7;
+    background-color: #D94B62;
 } 
 
 .cardBody:hover .card {
@@ -53,6 +55,122 @@ body {
 
 
 .team .row .cardBody .card {
-    height: 40rem;
-    width: 20rem;
+    /* height: 40rem;
+    width: 20rem; */
+}
+
+
+#aboutus-card1 {
+    background-image: url('../img/SAI\ KRISHNA\ MUSUNURU.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card2 {
+    background-image: url('../img/MRUDULA\ MUCHERLA.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+
+#aboutus-card3 {
+    background-image: url('../img/SRI\ NAGESH\ KOTIPALLI.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+
+#aboutus-card4 {
+    background-image: url('../img/HINA\ JOSHI.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card5 {
+    background-image: url('../img/Soumyadeep\ Nandi.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card6 {
+    background-image: url('../img/VISHAL\ MISHRA.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+
+#aboutus-card7 {
+    background-image: url('../img/MAHA\ VISHPATH.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card8 {
+    background-image: url('../img/MANIKANTA.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card9 {
+    background-image: url('../img/Pravalika\ Attada.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card10 {
+    background-image: url('../img/Sheikh\ Sadi.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card11 {
+    background-image: url('../img/Kshitij\ Chaudhary.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card12 {
+    background-image: url('../img/MADHU\ KIRAN.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card13 {
+    background-image: url('../img/VISWANATH.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
+}
+
+#aboutus-card14 {
+    background-image: url('../img/Saksham\ Sharma.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 30rem;
 }
