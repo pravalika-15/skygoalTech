@@ -59,6 +59,46 @@
 
 
     <!-- Initialize Swiper -->
+  <script type="module">
+    import Swiper from 'swiper/swiper-bundle.esm.js';
+    import 'swiper/swiper-bundle.css';
+    var swiper = new Swiper('.swiper2', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        100: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1350: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        }
+        },
+    });
+  </script>
+
+
+    <!-- Initialize Swiper -->
    <script type="module">
     import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
   
@@ -92,13 +132,28 @@
           slidesPerView: 4,
           spaceBetween: 50,
         }
-        },       
+        },
+        
+        
+        
+        
+
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
 
 });
 </script>
 
 <!-- Initialize Swiper -->
-<script type="module">
+<!-- <script type="module">
     import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
   
     const swiper2 = new Swiper('.swiper2', {
@@ -133,8 +188,24 @@
           spaceBetween: 50,
         }
         },
+        
+        
+        
+        
+
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
 });
-</script>
+</script> -->
 
 </head>
 <body style="overflow-x: hidden;">
@@ -536,90 +607,90 @@
 
             <div class="row pb-4">
 
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 48 (1).png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 49.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 50.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 51.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 57.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 56.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 58.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Frame 59.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13841.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13842.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13839.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13836.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13835.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13840.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13844.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13846.png" class="img-fluid">
-                </div>
-  
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13849.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13850.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13833.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13834.png" class="img-fluid">
-                </div>
-  
-                <div class="col-lg-2 col-sm-4 col-md-4">
-                    <img src="./assets/img/Group 13853.png" class="img-fluid">
-                </div>
+                    <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 48 (1).png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 49.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 50.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 51.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 57.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 56.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 58.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Frame 59.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13841.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13842.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13839.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13836.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13835.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13840.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13844.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13846.png" class="img-fluid">
+              </div>
+
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13849.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13850.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13833.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13834.png" class="img-fluid">
+              </div>
+
+              <div class="col-lg-2 col-sm-4 col-md-4">
+                  <img src="./assets/img/Group 13853.png" class="img-fluid">
+              </div>
                   
 
             </div>
@@ -759,14 +830,6 @@
         </div>
     </div>
     <!-- review section start -->
-    
-        
-    </div>
-
-
-    
-        
-</div>
 
 
     <section>
@@ -881,30 +944,6 @@
     <script src="jquery.min.js"></script>    
     <script src="owlcarousel/owl.carousel.min.js"></script>
 
-    <script>
-        var owl = $('.owl-carousel');
-        $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
-        }
-    }
-})
-    
-    </script>
 
 <!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxGI0VigNr266KTmWHW687CIBHNkaklEwMEA-nPPAnkjyKlv6P3s-SNCFOxN_txrCaJ/exec'
